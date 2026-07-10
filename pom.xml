@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>sc002-upgrade-before</artifactId>
+  <artifactId>sc001-downgrade-before</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
-  <!-- user_scenarios.md SC-002 입력 예시 그대로의 Java 8 "변환 전" 상태.
-       knowledge_base/jep_rules의 업그레이드 규칙을 검증하기 위한 실제 빌드 가능한 픽스처. -->
+  <!-- user_scenarios.md SC-001 입력 예시 그대로의 Java 21 "변환 전" 상태.
+       knowledge_base/jep_rules의 다운그레이드 규칙을 검증하기 위한 실제 빌드 가능한 픽스처. -->
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
